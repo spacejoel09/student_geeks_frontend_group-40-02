@@ -1,46 +1,46 @@
 //TODO TEST
 
-// let AutoNumber = prompt("Введите номер машины")
+let AutoNumber = prompt("Введите номер машины")
 
-// function validateNumberAuto(AutoNumber) {
-//
-//     if (AutoNumber.length !== 10) return true;
-//
-//     let lastThreeSymbols = AutoNumber.slice(-3)
-//     let noneSymbols = [
-//         "MVD",
-//         "MWD",
-//         "SEX",
-//         "AUE",
-//         "UZB",
-//         "TAJ",
-//         "ORG",
-//         "LOL",
-//         "HUY",
-//         "GAI",
-//     ];
-//     return !noneSymbols.includes(lastThreeSymbols);
-// }
-//
-// console.log(validateNumberAuto("01KG123ABC"));
-// console.log(validateNumberAuto("01KG555MVD"));
+function validateNumberAuto(AutoNumber) {
 
-// TODO HW
+    if (AutoNumber.length !== 10) return true;
 
-// 2 ЗАДАЧА
+    let lastThreeSymbols = AutoNumber.slice(-3)
+    let noneSymbols = [
+        "MVD",
+        "MWD",
+        "SEX",
+        "AUE",
+        "UZB",
+        "TAJ",
+        "ORG",
+        "LOL",
+        "HUY",
+        "GAI",
+    ];
+    return !noneSymbols.includes(lastThreeSymbols);
+}
+
+console.log(validateNumberAuto("01KG123ABC"));
+console.log(validateNumberAuto("01KG555MVD"));
+
+//TODO HW
+
+//2 ЗАДАЧА
 
 
-// function revNumber(Number) {
-//     let revNumber = '';
-//
-//     for (let i = Number.length -1; i >= 0; i--) {
-//         revNumber += Number[i];
-//
-//     }
-//     return revNumber;
-// }
-//
-// console.log(revNumber  (  "123456789"));
+function revNumber(Number) {
+    let revNumber = '';
+
+    for (let i = Number.length -1; i >= 0; i--) {
+        revNumber += Number[i];
+
+    }
+    return revNumber;
+}
+
+console.log(revNumber  (  "123456789"));
 
 
 //1x Задача
