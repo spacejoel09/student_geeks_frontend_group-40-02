@@ -1,0 +1,70 @@
+body{
+    background-color: #012a35;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+/*.container{*/
+/*    background-image: url("Background.webp");*/
+/*}*/
+.container{
+    width: 100%;
+    height: 100%;
+    /*background-image: url("Background.webp");*/
+}
+.lottery-generator__top{
+    margin-top: 50px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.lottery-generator__line{
+    width: 45px;
+    margin: 0;
+}
+.lottery-generator__title{
+    color: white;
+    font-weight: 400;
+    font-family: sans-serif;
+    font-size: 32px
+}
+.lottery-generator__description{
+    color: white;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+.lottery-generator__button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #4597ae;
+    color: white;
+    border: 1px solid #939090;
+    cursor: pointer;
+}
+.lottery-generator__bottom{
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.lottery-generator__bottom-circle{
+    font-family: sans-serif;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: rgba(0 ,0 ,0, 0.5);
+    border: 3px solid #ffffff;
+}
