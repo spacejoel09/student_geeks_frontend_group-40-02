@@ -1,0 +1,38 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background: yellowgreen;
+}
+h2{
+    color: white;
+}
+.block-number {
+    font-family: sans-serif Arial;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 600px;
+    margin: 0 auto;
+    background: darkred;
+    box-shadow: -11px 15px 8px 0 rgba(0, 0, 0, 0.2);
+
+
+}
+#textarea{
+    font-family: sans-serif;
+    font-size: large;
+}
+.Count{
+    color: #051627;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
