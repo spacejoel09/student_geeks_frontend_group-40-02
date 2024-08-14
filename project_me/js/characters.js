@@ -48,3 +48,12 @@ request.onload = () => {
 
 
 request.send();
+
+const testRequest = new XMLHttpRequest();
+testRequest.open('GET', "../data/file.json");
+testRequest.setRequestHeader("Content-Type","application/json")
+testRequest.onload = () => {
+    const testData = JSON.parse(testRequest.responseText);
+    console.log(testData)
+}
+testRequest.send()
