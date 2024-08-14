@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+body {
+    @font-face {
+        font-family: "gotham";
+        src: url('../fonts/Gotham-Book.woff') format('woff'),
+        url('../fonts/Gotham-Book.woff2') format('woff2'),
+        url('../fonts/Gotham-Book.ttf') format('truetype');
+        font-weight: normal;
+    }    background: #c2d0d0;
+}
+
+.btn {
+    width: 250px;
+    height: 50px;
+    cursor: pointer;
+    border: 1px solid var(--orange);
+    background: black;
+    color: var(--orange);
+    border-radius: 8px;
+}
+
+.btn:hover {
+    background: #414349;
+}
+
+.btn:active {
+    background: #56585D;
+    border: 2px solid var(--orange);
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+h1 {
+    text-align: center;
+    font-size: 70px;
+    color: white;
+    margin: 0 auto;
+    text-transform: uppercase;
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    margin: 0 auto;
+    text-transform: uppercase;
+}
+
+h3 {
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+    text-transform: uppercase;
+}
+
+h4 {
+    color: white;
+    text-transform: uppercase;
+}
+
+strong {
+    color: #F79300;
+}
+
+label {
+    color: var(--orange);
+}
+
+input {
+    width: 350px;
+    height: 50px;
+    padding-left: 5px;
+    color: var(--orange);
+    background: black;
+    border: 2px solid var(--orange);
+}
+
+.checker {
+    color: white;
+}
+
+.btn-slide {
+    display: block;
+    width: 100px;
+    height: 100px;
+    background: var(--orange);
+    color: black;
+    text-transform: uppercase;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.btn-slide:hover {
+    background: #b68733 !important;
+    cursor: pointer;
+    color: white;
+}
+
+:root {
+    --orange: orange;
+    --black: black;
+}
