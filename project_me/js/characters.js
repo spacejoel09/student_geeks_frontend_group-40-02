@@ -42,12 +42,9 @@ request.onload = () => {
                         charactersBlock.appendChild(characterCard);
                 });
         } else {
-                console.error('Ошибка при загрузке данных:', request.status, request.statusText);
+                console.error('грусть:', request.status, request.statusText);
         }
 };
 
-request.onerror = () => {
-        console.error('Ошибка соединения');
-};
 
 request.send();
