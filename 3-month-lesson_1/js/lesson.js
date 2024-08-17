@@ -72,7 +72,7 @@ tabsParent.onclick = (event) => {
             if (event.target === item){
                 hideTabContent()
                 index = i
-                showTabContent(i)
+                showTabContent(i)       
                 resetAutoSlide()
             }
         })
@@ -83,3 +83,58 @@ tabsParent.onclick = (event) => {
 hideTabContent()
 startSlide()
 showTabContent(0)
+
+
+const somInput = document.querySelector('#som');
+const usdInput = document.querySelector('#usd');
+const euroInput = document.querySelector('#euro');
+
+let exchangeRates = {};
+
+const loadExchangeRates = () => {
+    const request = new XMLHttpRequest();
+    request.open('GET', "../data/data.json");
+    request.setRequestHeader("Content-type", "application/json");
+    request.send();
+    request.onload = () => {
+        const data = JSON.parse(request.response)[0];
+        exchangeRates = {
+            usd: data.usd,
+            euro: data.euro
+        };
+        console.log(exchangeRates);
+    };
+};
+
+const setInputValue = (inputElement, value) => {
+    if (isNaN(value) || value === Infinity || value === -Infinity) {
+        inputElement.value = '';
+    } else {
+        inputElement.value = value.toFixed(2);
+    }
+};
+
+const convertCurrency = (element, targetElements) => {
+    const value = parseFloat(element.value);
+    if (isNaN(value)) {
+        targetElements.forEach(target => target.value = '');
+        return;
+    }
+
+    if (element.id === "som") {
+        setInputValue(usdInput, value / exchangeRates.usd);
+        setInputValue(euroInput, value / exchangeRates.euro);
+    } else if (element.id === "usd") {
+        setInputValue(somInput, value * exchangeRates.usd);
+        setInputValue(euroInput, (value * exchangeRates.usd) / exchangeRates.euro);
+    } else if (element.id === "euro") {
+        setInputValue(somInput, value * exchangeRates.euro);
+        setInputValue(usdInput, (value * exchangeRates.euro) / exchangeRates.usd);
+    }
+};
+
+somInput.addEventListener('input', () => convertCurrency(somInput, [usdInput, euroInput]));
+usdInput.addEventListener('input', () => convertCurrency(usdInput, [somInput, euroInput]));
+euroInput.addEventListener('input', () => convertCurrency(euroInput, [somInput, usdInput]));
+
+loadExchangeRates();
