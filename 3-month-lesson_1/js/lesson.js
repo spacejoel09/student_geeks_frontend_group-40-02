@@ -1,30 +1,31 @@
-const phoneInput = document.querySelector('#phone_input');
+const phoneInput = document.querySelector('#phone-input');
 const phoneButton = document.querySelector('#phone_button');
 const phoneSpan = document.querySelector('#phone_result');
 
 const regExp = /^\+996 [2579]\d{2} \d{2}-\d{2}-\d{2}$/;
 
-
-phoneButton.onclick = function () {
+phoneButton.onclick = () => {
     if (regExp.test(phoneInput.value)) {
-        phoneSpan.innerHTML = "OK";
+        phoneSpan.innerHTML = "Ok"
         phoneSpan.style.color = "green"
 
     }else {
-        phoneSpan.innerHTML = "Not ok";
+        phoneSpan.innerHTML = "Not OK"
         phoneSpan.style.color = "red"
     }
-
 
 }
 
 
+
+
+
+
+// Tab SLIDER
+
+
 const tabContentsBlocks = document.querySelectorAll(".tab_content_block")
 const tabsParent =   document.querySelector(".tab_content_items")
-let index = 0;
-let intervaId;
-
-
 const  tabs = document.querySelectorAll('.tab_content_item');
 const hideTabContent = () => {
     tabContentsBlocks.forEach((item) => {
@@ -42,48 +43,24 @@ const showTabContent = (index) => {
 
 
 }
+hideTabContent()
 
-
-
-const startSlide = () => {
-    intervaId = setInterval(() => {
-        index++;
-        if (index > tabs.length - 1) {
-            index = 0;
-        }
-        hideTabContent();
-        showTabContent(index);
-    }, 3000);
-}
-
-
-const resetAutoSlide = () => {
-    clearInterval(intervaId);
-    startSlide();
-};
-
-
-
+showTabContent(0)
 
 
 tabsParent.onclick = (event) => {
     if (event.target.classList.contains('tab_content_item')) {
-        tabs.forEach((item,i) => {
+        tabs.forEach((item,index) => {
             if (event.target === item){
-                hideTabContent()
-                index = i
-                showTabContent(i)       
-                resetAutoSlide()
+                if (event.target === item){
+                    hideTabContent()
+                    showTabContent(index)
+                }
             }
         })
     }
+
 }
-
-
-hideTabContent()
-startSlide()
-showTabContent(0)
-
 
 const somInput = document.querySelector('#som');
 const usdInput = document.querySelector('#usd');
@@ -138,3 +115,48 @@ usdInput.addEventListener('input', () => convertCurrency(usdInput, [somInput, eu
 euroInput.addEventListener('input', () => convertCurrency(euroInput, [somInput, usdInput]));
 
 loadExchangeRates();
+
+
+
+// DRY - dont repeat yourself
+// KISS - keep it simple, stupid -
+
+
+const cardBlock = document.querySelector('.card');
+const nextCard = document.querySelector('#btn-next');
+const prevCard = document.querySelector('#btn-prev');
+let cardId = 1;
+
+function loadCard(id) {
+    fetch(`https://jsonplaceholder.typicode.com/todos/${id}`)
+        .then(res => res.json())
+        .then(data => {
+            cardBlock.innerHTML = `
+                <p>${data.title}</p> 
+                <p style="color: ${data.completed ? "green" : "red"}">
+                    ${data.completed ? "True" : "False"}
+                </p> 
+                <span>${data.id}</span>`;
+        });
+}
+
+nextCard.onclick = () => {
+    cardId++;
+    if (cardId > 200) cardId = 1;
+    loadCard(cardId);
+};
+
+prevCard.onclick = () => {
+    cardId--;
+    if (cardId < 1) cardId = 200;
+    loadCard(cardId);
+};
+
+loadCard(cardId);
+
+fetch('https://jsonplaceholder.typicode.com/posts')
+    .then(res => res.json())
+    .then(data => {
+        console.log(data);
+    });
+
