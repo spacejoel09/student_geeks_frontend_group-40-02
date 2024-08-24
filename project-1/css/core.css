@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto;
+}
+.footer_logotype{
+    position: absolute;
+}
+.filter_logo{
+    position: absolute;
+    bottom: 20px;
+}
+.logo{
+    position: relative;
+}
+.fl-social{
+    padding-left: 5px;
+    gap: 20px;
+    display: flex;
+}
+.flc-img img {
+    border-radius: 30%;
+    width: 25px;
+    height: 25px;
+    filter: brightness(40%);
+}
+.flc-img:hover img {
+    transform: scale(1.2);
+}
+
+.footer_inner{
+    margin-left: 100px;
+    margin-right: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    gap: 120px;
+    z-index: 3;
+    opacity: 1;
+}
+
+.logo{
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 25.522px;
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 15.0px;
+}
+.footer_logotype .filter_logo,
+.footer_logotype .logo {
+    font-size: 20px;
+    font-weight: bold;
+    background: linear-gradient(to bottom, #DC781C, #C93677);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.filter_logo{
+    text-transform: uppercase;
+    font-size: 25.522px;
+    font-weight: 900;
+    filter: blur(10px);
+    position: absolute;
+    top: 10px;
+}
+
+.footer_menu{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 25.42px;
+    margin-bottom: 19.36px;
+}
+
+.copyright{
+    color: #848895;
+    line-height: 27.3px;
+}
+
+.first_block{
+    font-weight: bold;
+    font-size: 25px;
+    display: flex;
+    gap: 245px;
+}
+
+.pages{
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+.pages span{
+    text-transform: uppercase;
+}
+
+.pages a {
+    color: #848895;
+    font-size: 15px;
+    line-height: 27.3px;
+    transition: 0.3s;
+}
+
+.pages a:hover{
+    text-shadow: 0 0 10px gray;
+    transition: 0.3s;
+    font-weight: 500;
+}
+body {
+    overflow-x: hidden;
+    font-family: "Montserrat", sans-serif;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+h1 {
+
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+h2 {
+
+    text-transform: uppercase;
+}
+
+h3 {
+
+    text-transform: uppercase;
+}
+
+h4 {
+    text-transform: uppercase;
+}
+.pages-acc{
+    font-size: 16px;
+    font-weight: 700;
+    transition: 0.3s;
+    line-height: 27.3px;
+    display: flex;
+    background: transparent;
+    border: none;
+    color: #848895;
+}
+.pages-acc:hover{
+    text-shadow: 0 0 10px gray;
+    transition: 0.3s;
+    font-weight: 600;
+}

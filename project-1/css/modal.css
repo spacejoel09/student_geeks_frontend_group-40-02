@@ -1,0 +1,240 @@
+.modal {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+    background: rgba(28, 28, 28, 0.80);
+    display: none;
+}
+.modal_content{
+
+}
+.modal_dialog {
+    width: 550px;
+    margin: 60px auto;
+}
+
+.modal-top{
+    padding: 22px;
+    height: 250px;
+    width: 520px;
+}
+
+.modal_title-box{
+    padding-bottom: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.modal_title{
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 90%; /* 40.135px */
+    letter-spacing: -1.115px;
+    color: #FFF;
+}
+
+.wallet-icon{
+    margin-top: 42px;
+}
+
+.hr{
+    width: 475.676px;
+    margin: 0 auto;
+    border: 0.1px solid #E0E0E0;
+}
+
+.line{
+    margin-top: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.line p{
+    width: 248.095px;
+    color: #FFF;
+    font-size: 14.865px;
+}
+.converter-con h3{
+    font-size: 40px;
+    font-weight: 600;
+
+}
+.cc-inner{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.usd label{
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.usd input{
+    padding-left: 10px;
+
+    height: 25px;
+    border: 1px solid #1c1e22;
+    border-radius: 5px;
+    width: 300px;
+}
+.euro label{
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.euro input{
+    padding-left: 10px;
+
+    border: 1px solid #1c1e22;
+    border-radius: 5px;
+    height: 25px;
+    width: 300px;
+}
+.som label{
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.som input{
+    padding-left: 10px;
+    border: 1px solid #1c1e22;
+    border-radius: 5px;
+    height: 25px;
+    width: 300px;
+}
+.converter-con{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.converter{
+    width: 100%;
+    height: 300px;
+}
+.modal_content {
+    position: relative;
+    width: 100%;
+    background: #2b2e2e !important;
+    border-radius: 14.865px;
+    padding: 14px;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.modal_content form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal_close {
+    position: absolute;
+    top: 8px;
+    right: 24px;
+    font-size: 30px;
+    color: #D37015;
+    opacity: 0.5;
+    font-weight: 700;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.city{
+    color: #FFF;
+    font-size: 30px;
+}
+
+.temp{
+    color: #FFF;
+    font-size: 30px;
+}
+.form_item button{
+    height: 30px;
+}
+.form_items{
+    gap: 5px;
+    margin-top: -20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.input_label{
+    padding:5px;
+    font-size: 11px;
+    font-weight: 500;
+    color: #888888;
+}
+
+.modal_input{
+    width: 520px;
+    padding: 15px;
+    border-radius: 7.432px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    border: none;
+    outline: none;
+}
+
+.mini{
+    width: 252px;
+}
+
+.btn-container{
+    display: flex;
+    position: relative;
+    margin-top: 10px;
+}
+
+.btn-container .btn{
+    width: 520px;
+    border-radius: 11.149px;
+    height: 55px;
+}
+
+.arrow-icon{
+    position: absolute;
+    right: 3px;
+    cursor: pointer;
+    top: 3px;
+}
+
+._error{
+    border: 1px solid rgb(147, 16, 16);
+    box-shadow: 0 0 20px rgb(251, 2, 2);
+}
+
+._ok{
+    border: 1px solid rgb(70, 227, 3);
+    box-shadow: 0 0 20px rgb(70, 227, 3);
+}
+.modal-top p {
+    position: absolute;
+    left: 10%;
+    font-size: 1.4rem;
+}

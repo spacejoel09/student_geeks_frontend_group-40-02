@@ -1,0 +1,72 @@
+
+
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    padding-bottom: 80px;
+}
+
+.card{
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #1e2024;
+    background: #1c1e22;
+    padding: 40px;
+    border-radius: 10px;
+    width: 600px;
+    height: 300px;
+}
+
+.card {
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeInUp 0.5s ease forwards;
+    animation-delay: calc(var(--order) * 0.3s);
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card:nth-child(1) {
+    --order: 0;
+}
+.card:nth-child(2) {
+    --order: 1;
+}
+.card:nth-child(3) {
+    --order: 2;
+}   
+
+
+.imagecard img{
+    border-radius: 50%;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 30px;
+}
+.title{
+    text-align: center;
+    color: aliceblue;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.body{
+    top: 100px;
+    right: 100px;
+    position: absolute;
+    width: 40%;
+    color: aliceblue;
+    margin-top: 30px;
+    font-weight: 400;
+}

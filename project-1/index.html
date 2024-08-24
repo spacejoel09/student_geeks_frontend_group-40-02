@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Exo:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/core.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+          integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/css/modal.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="">Home</a>
+            <a href="./pages/works.html">Categories</a>
+            <a href="./pages/lessons.html">Example</a>
+            <a href="./pages/monster.html">Festival</a>
+            <a href="./pages/cards.html">Pages</a>
+        </nav>
+    </header>
+    <div class="wrapper">
+        <div class="carousel">
+            <div class="list">
+                <div class="item">
+                    <img class="main-image" src="images/magicbattle-slider.png">
+                    <div class="content">
+                        <div class="author">№1 SPOTLIGHT</div>
+                        <div class="title">JUJUTSU KAISEN Season 2</div>
+                        <div class="topic">ANIME</div>
+                        <div class="des">
+                            A boy fights... for "the right death."Hardship, regret, shame: the negative feelings that humans feel become Curses that lurk in our everyday lives. The Curses run rampant throughout the world, capable of leading people to terrible... More
+                        </div>
+                        <div class="buttons">
+                            <button class="button-subs">SEE MORE</button>
+                            <button class="button-subs subscription">SUBSCRIBE</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="main-image" src="images/tokyorevengers-slider.png">
+                    <div class="content">
+                        <div class="author">№2 SPOTLIGHT</div>
+                        <div class="title">TOKYO REVENGERS</div>
+                        <div class="topic">ANIME</div>
+                        <div class="des">
+                            Watching the news, Takemichi Hanagaki learns that his girlfriend from way back in middle school, Hinata Tachibana, has died. The only girlfriend he ever had was just killed by a villainous group known as the Tokyo Manji Gang. He lives in a crappy apartment with t...More
+                        </div>
+                        <div class="buttons">
+                            <button class="button-subs">SEE MORE</button>
+                            <button class="button-subs subscription">SUBSCRIBE</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="main-image" src="images/onepiece-slider.png">
+                    <div class="content">
+                        <div class="author">№3 SPOTLIGHT</div>
+                        <div class="title">ONE PIECE</div>
+                        <div class="topic">ANIME</div>
+                        <div class="des">
+                            Gol D. Roger, known as the Pirate King, was feared and respected for his incredible strength and prominence in the Grand Line. However, his capture and execution by the World Government brought about dramatic changes felt throughout the world. In his final ...More
+                        </div>
+                        <div class="buttons">
+                            <button class="button-subs">SEE MORE</button>
+                            <button class="button-subs subscription">SUBSCRIBE</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="main-image" src="images/Tower-of-god-slider.jpg">
+                    <div class="content">
+                        <div class="author">№4 SPOTLIGHT</div>
+                        <div class="title">TOWER OF GOD Season 2</div>
+                        <div class="topic">ANIME</div>
+                        <div class="des">
+                            Ja Wangnan can’t seem to pass the 20th floor. Even after failing time and time again, he refuses to give up. On his journey, he meets a mysterious and powerful character named Viole. Wangnan invites Viole to join his team of Regulars. Their journey c…                </div>
+                        <div class="buttons">
+                            <button class="button-subs">SEE MORE</button>
+                            <button class="button-subs subscription">SUBSCRIBE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  thumnail -->
+            <div class="thumbnail">
+                <div class="item">
+                    <img class="main-image" src="images/magicbattle-slider.png">
+                    <div class="content">
+                        <div class="title">
+                            JUJUTSU KAISEN
+                        </div>
+                        <div class="description">
+                            MANGA
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="main-image" src="images/tokyorevengers-slider.png">
+                    <div class="content">
+                        <div class="title">
+                            TOKYO REVENGERS
+                        </div>
+                        <div class="description">
+                            MANGA
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="main-image" src="images/onepiece-slider.png">
+                    <div class="content">
+                        <div class="title">
+                        </div>
+                        <div class="description">
+                            MANGA
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="main-image" src="images/Tower-of-god-slider.jpg">
+                    <div class="content">
+                        <div class="title">
+                            TOWER OF GOD
+                        </div>
+                        <div class="description">
+                            MANHWA
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="arrows">
+                <button id="prev"><</button>
+                <button id="next">></button>
+            </div>
+
+            <div class="time"></div>
+        </div>
+
+
+        <div class="paper-list scroll-fade">
+            <div class="container">
+                <div class="block-view">
+                    <h2>Most Popular</h2>
+                    <div class="section-view__more">View more</div>
+                </div>
+                <hr>
+
+                <div class="section">
+
+                    <div class="section-wrap">
+<!--                        <div class="wrap-item">-->
+<!--                            <img src="/images/attack-ontitan-list.png" alt="titans_attack">-->
+<!--                            <div class="bottom-item">-->
+<!--                                <span class="number-list">01</span>-->
+<!--                                <span>Attack on Titan</span>-->
+<!--                            </div>-->
+
+<!--                        </div>-->
+<!--                        <div class="wrap-item">-->
+<!--                            <img src="/images/onepiece-list.png" alt="onepiece-list">-->
+<!--                            <div class="bottom-item">-->
+<!--                                <span class="number-list">02</span>-->
+<!--                                <span>One Piece</span>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="wrap-item">-->
+<!--                            <img src="/images/naruto-list.png" alt="naruto-list">-->
+<!--                            <div class="bottom-item">-->
+<!--                                <span class="number-list">03</span>-->
+<!--                                <span>Naruto</span>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="wrap-item">-->
+<!--                            <img src="" alt="">-->
+<!--                            <div class="bottom-item">-->
+<!--                                <span class="number-list">04</span>-->
+<!--                                <span>Death Note</span>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="wrap-item">-->
+<!--                            <img src="" alt="">-->
+<!--                            <div class="bottom-item">-->
+<!--                                <span class="number-list">05</span>-->
+<!--                                <span>One Punch Man</span>-->
+<!--                            </div>-->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block-view">
+                    <h2>Top Airing</h2>
+                    <div class="section-view__more">View more</div>
+                </div>
+                <hr class="whr">
+
+                <div class="second section">
+                    <div class="second section-wrap" >
+<!--                        <div class="second wrap-item">-->
+<!--                            <img src="" alt="">-->
+<!--                            <div class="second bottom-item">-->
+<!--                                <span class="second number-list">01</span>-->
+<!--                                <span>Tokyo Revengers</span>-->
+<!--                            </div>-->
+<!--                        </div>-->
+
+<!--                        <div class="second wrap-item">-->
+<!--                            <img src="" alt="">-->
+<!--                            <div class="second bottom-item">-->
+
+<!--                                <span class="second number-list">02</span>-->
+<!--                                <span>Vinland Saga</span>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="second wrap-item">-->
+<!--                            <img src="" alt="">-->
+<!--                            <div class="second bottom-item">-->
+<!--                                <span class="number-list">03</span>-->
+<!--                                <span>Blue Lock</span>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="wrap-item">-->
+<!--                            <img src="" alt="">-->
+<!--                            <div class="second bottom-item">-->
+<!--                                <span class="second number-list">04</span>-->
+<!--                                <span>Spy X Family</span>-->
+<!--                            </div>-->
+
+<!--                        </div>-->
+<!--                        <div class="second wrap-item">-->
+<!--                            <img src="" alt="">-->
+<!--                            <div class="second bottom-item">-->
+
+<!--                                <span class="second number-list">05</span>-->
+<!--                                <span>Chainsaw Man</span>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+                </div>
+            </div>
+        </div>
+
+        <div class="screen-block ">
+            <div class="container">
+                <div class="screen-view scroll-fade">
+                        <img class="screen-block__left" src="https://images.alphacoders.com/183/183401.jpg" alt="">
+
+                    <div class="screen-block__right">
+                        <h2 class="screen-block-h2">One Piece </h2>
+                        <div class="screen-block-des">
+                            <h3 class="screen-block-h3">1116 series</h3>
+                            <p class="block-des">"One Piece follows the journey of Monkey D. Luffy, a spirited young pirate with the dream of becoming the Pirate King. In this world... More</p>
+                            <div class="screen-buttons">
+                                <a href="./pages/lessons.html">
+                                <button class="screen-btn">
+                                    <img class="fa-play" src="/images/screenview/Vector.png" alt="">
+
+                                    Watch Now
+
+                                </button>
+                                </a>
+                                <button class="block-btn">
+                                    <img src="/images/screenview/Plus%20icon.png" alt="">
+                                    Add to List</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <hr class="first-hr">
+                <div class="screen-upcoming scroll-fade">
+                    <div class="block-view">
+                        <h2>Upcoming</h2>
+                        <div class="section-view__more">View more</div>
+                    </div>
+                    <hr class="whr">
+                    <div class="upcoming-left">
+                        <img class="upcoming-img" src="/images/screenview/Ill-Become-a-Villainess-That-Will-Go-Down-in-History.jpg" alt="">
+                        <div class="upcoming-des">
+                            <h3 class="screen-block-h3" id="title">I’ll Become a Villainess Who Goes Down in History</h3>
+                            <div class="screen-buttons">
+                                <button class="upcoming-button screen-btn">Isekai</button>
+                                <button class="upcoming-button screen-btn">Villainess</button>
+                                <button class="upcoming-button screen-btn">Adventure</button>
+                            </div>
+
+                            <p class="block-des">Alicia hates "goody-two-shoes" heroines. Her wishes come true when she is reincarnated into a villainess in her favorite otome games. She strives to be the world's most evil villainess in history. However, the more she tries to be a villainess, the more the prince appears to like her</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="first-hr">
+
+        <div class="footer">
+            <div class="container">
+                <div class="footer_inner">
+
+                    <div class="first_block">
+                        <div class="pages">
+                            <span>Navigation</span>
+                            <a href="./pages/works.html">Categories</a>
+                            <a href="./pages/lessons.html">Example</a>
+                        </div>
+
+                        <div class="pages">
+                            <span>Account</span>
+                            <button class="pages-acc" id="create">Create Account</button>
+                            <button class="pages-acc" id="Log">Login</button>
+                        </div>
+                        <div class="pages">
+                            <span>About</span>
+                            <a href="./pages/monster.html">Festival</a>
+                            <a href="">Help</a>
+                            <a href="">FAQ</a>
+                        </div>
+
+                    </div>
+                    <div class="second_footer">
+                        <div class="footer_logotype">
+                            <div class="filter_logo">Follow us on</div>
+                            <span class="logo">Follow us on</span>
+                            <ul class="fl-social">
+                                <li class="flc-img">
+                                    <a href="">
+                                        <img src="/images/telegram.png" alt="">
+                                    </a>
+                                </li>
+                                <li class="flc-img">
+                                    <a href="">
+                                        <img src="/images/instagram.jfif" alt="">
+                                    </a>
+                                </li>
+                                <li class="flc-img">
+                                    <a href="">
+                                        <img src="/images/github.webp" alt="">
+                                    </a>
+                                </li>
+                                <li class="flc-img">
+                                    <a href="">
+                                        <img src="/images/discord.webp" alt="">
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="zero" class="modal">
+        <div class="modal_dialog">
+            <div class="modal_content">
+                <form action="#">
+                    <div id="zero-close" class="modal_close">&times;</div>
+                    <div class="modal-top">
+                        <div class="modal_title-box">
+                            <div class="modal_title">Create Account</div>
+                        </div>
+                    </div>
+                    <div class="form_item">
+                        <label for="name" class="input_label">Username</label>
+                        <input id="name"  required placeholder="space" name="fullname" type="text" class="modal_input">
+                    </div>
+                    <div class="form_items">
+                        <div class="form_item">
+                            <label for="gmail" class="input_label"> E-mail</label>
+                            <input id="gmail" required placeholder="example@gmail.com" name="gmail" type="email" class="modal_input mini">
+                        </div>
+                    </div>
+                    <div class="form_item">
+                        <label for="password" class="input_label">Password</label>
+                        <input id="password" required type="password" class="cityName modal_input" placeholder="****"  name="city">
+                    </div>
+                    <div class="btn-container">
+                        <button class="btn btn_dark btn_min" id="validate-btn">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="second" class="modal">
+        <div class="modal_dialog">
+            <div class="modal_content">
+                <form action="#">
+                    <div id="close-second" class="modal_close">&times;</div>
+                    <div class="modal-top">
+                        <div class="modal_title-box">
+                            <div class="modal_title">Login</div>
+                        </div>
+                    </div>
+                    <div class="form_item">
+                        <label for="name" class="input_label">Username</label>
+                        <input id="name-2"  required placeholder="space" name="fullname" type="text" class="modal_input">
+                    </div>
+
+                    <div class="form_item">
+                        <label for="password" class="input_label">Password</label>
+                        <input id="password-2" required type="password" class="cityName modal_input" placeholder="****"  name="city">
+                    </div>
+                    <div class="btn-container">
+                        <button class="btn btn_dark btn_min" id="validate-btn-2">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="third" class="modal">
+        <div class="modal_dialog">
+            <div class="modal_content">
+                <form action="#">
+                    <div id="close-third" class="modal_close">&times;</div>
+                    <div class="modal-top">
+                        <div class="modal_title-box">
+                            <div class="modal_title">BUY SUBSCRIPTION</div>
+                        </div>
+                        <p>
+                            We do not return goods after purchase.
+                        </p>
+                    </div>
+                    <div class="converter">
+                        <div class="converter-con">
+                            <h3>COST 15$</h3>
+                            <div class="cc-inner">
+                                <div class="som">
+                                    <label for="som">Som</label>
+                                    <input type="number" readonly id="som">
+                                </div>
+                                <div class="usd">
+                                    <label for="usd">Usd</label>
+                                    <input type="number" id="usd">
+                                </div>
+                                <div class="euro">
+                                    <label for="euro">Euro</label>
+                                    <input type="number"  readonly id="euro">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <style>
+        .screen-upcoming {
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.98), rgba(0, 0, 0, 0.97)),
+            url("./images/screenview/Ill-Become-a-Villainess-That-Will-Go-Down-in-History-anime-adaptation-announced_-What-will-it-be-ab-2.webp");
+            z-index: 1;
+            background-size: cover;
+        }
+        .footer {
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.98), rgba(0, 0, 0, 0.93)),
+            url("./images/footer/footer-menu.webp");
+        width: 100%;
+            z-index: 1;}
+    </style>
+
+    <script src="index.js"></script>
+    <script src="js/characters.js"></script>
+    <script src="js/modal.js"></script>
+
+
+
+</body>
+</html>
